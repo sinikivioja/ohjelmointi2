@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+// zip boing game
+
+int main()
+
+{
+    int number = 0;
+    cout << "How many numbers would you like to have? ";
+    cin >> number;
+
+    int count = 1;
+
+    while ( count <= number){
+        if ( count % 3 == 0 and count % 7 == 0){
+            cout << "zip boing" << endl;
+        } else if (count % 3 == 0) {
+            cout << "zip" << endl;
+        } else if (count % 7 == 0) {
+            cout << "boing" << endl;
+        }
+
+        else {
+            cout << count << endl;
+    }
+    count = count + 1;
+    }
+
+}
